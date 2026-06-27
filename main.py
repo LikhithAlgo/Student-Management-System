@@ -1,7 +1,7 @@
 students = {}
 
 def add_student():
-    usn = input("Enter Student USN: ").lower
+    usn = input("Enter Student USN: ").lower()
     name = input("Enter Student Name: ")
     marks = input("Enter Student Marks: ")
 
@@ -29,7 +29,7 @@ def view_students():
 
 
 def search_student():
-    usn = input("Enter USN to search: ")
+    usn = input("Enter USN to search: ").lower()
 
     if usn in students:
         print("\nStudent Found!")
@@ -40,7 +40,7 @@ def search_student():
 
 
 def delete_student():
-    usn = input("Enter USN to delete: ")
+    usn = input("Enter USN to delete: ").lower()
 
     if usn in students:
         del students[usn]
